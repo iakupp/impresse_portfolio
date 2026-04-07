@@ -2,13 +2,17 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import {Section} from "@/app/components/SectionAnimation"
-import {FormTypes, FormErrors} from "../types/formTypes";
+import FormTypes from "../types/formTypes";
 
 
 const Contact = () => {
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const [errors, setErrors] = useState<FormErrors>({});
+  const [errors, setErrors] = useState<FormTypes>({
+    nameInput: "",
+    emailInput: "",
+    messageInput: "",
+    });
   const [formData, setFormData] = useState<FormTypes>({
     nameInput: "",
     emailInput: "",
@@ -49,7 +53,7 @@ const submitForm = async () => {
 };
 
 const validate = () => {
-    const newErrors = {} as FormErrors;
+    const newErrors = {} as FormTypes;
 
     if (!formData.nameInput.trim())
       newErrors.nameInput = "Vyplňte meno.";

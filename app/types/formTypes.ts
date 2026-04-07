@@ -4,9 +4,3 @@ export default interface FormTypes {
   emailInput: string;
   messageInput: string;
 }
-
-export interface FormErrors {
-  nameInput?: string;
-  emailInput?: string;
-  messageInput?: string;
-}

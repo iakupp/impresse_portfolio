@@ -10,7 +10,7 @@ export const Section = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.div
       className="my-20 w-full"  
-      variants={sectionVariants}
+    //   variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}  // animuje len keď sekcia 30%vstúpi do viewportu
