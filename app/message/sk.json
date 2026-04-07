@@ -40,12 +40,6 @@
                 "description": "E-commerce web app is a platform that provides users with a wide range of shopping options, including products from various categories. It offers a user-friendly interface and personalized recommendations based on user preferences.",
                 "demo": "https://e-commerce-client-gilt-one.vercel.app",
                 "source": "https://github.com/iakupp/e-commerce-client"
-            },
-            "project3": {
-                "title": "Project 3",
-                "description": "Description for project 3.",
-                "demo": "Demo Link",
-                "source": "Source Code Link"
             }
         }
     }
