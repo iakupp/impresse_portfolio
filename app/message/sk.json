@@ -1,0 +1,52 @@
+{
+    "NavigationData":{
+        "links":[
+            "Home",
+            "Speciallized",
+            "Projects",
+            "Contact"
+        ]
+    },
+    "HeroSectionData": {
+        "title": {
+            "titleLine1": "Where logic meets creativity.",
+            "titleLine2": "Where ideas become code."
+        },
+        "description": ""
+    },
+    "SpeciallizedData": {
+        "title":"speciallized",
+        "skills":{
+            "skill1": "Next.js",
+            "skill2": "TypeScript",
+            "skill3": "Tailwind CSS",
+            "skill4": "React",
+            "skill5": "Node.js"
+        }
+
+    },
+    "ProjectsData": {
+        "title": "projects",
+        "description": "Here are some of my recent projects. Click on the links to see the live demo or the source code.",
+        "projects":{
+            "project1": {
+                "title": "Baver",
+                "description": "BAVER is your partner for complete water, gas, and heating installation and service.",
+                "demo": "https://baver-web.vercel.app",
+                "source": "https://github.com/iakupp/Baver-web"
+            },
+            "project2": {
+                "title": "E-commerce Web App",
+                "description": "E-commerce web app is a platform that provides users with a wide range of shopping options, including products from various categories. It offers a user-friendly interface and personalized recommendations based on user preferences.",
+                "demo": "https://e-commerce-client-gilt-one.vercel.app",
+                "source": "https://github.com/iakupp/e-commerce-client"
+            },
+            "project3": {
+                "title": "Project 3",
+                "description": "Description for project 3.",
+                "demo": "Demo Link",
+                "source": "Source Code Link"
+            }
+        }
+    }
+}

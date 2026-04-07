@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap");
+@import "tailwindcss";
+
+:root {
+  --bg-color: #0f0f0f;
+  --nav-color: #0f0f0fbe;
+  --sections-heading: #1c1c1c;
+  --primary-color: #d4ffbc;
+}
+* {
+  @apply transition-all duration-300;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+@layer utilities {
+  .glow {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(212, 255, 188, 0.6) 0%,
+      rgba(15, 15, 15, 0) 70%
+    );
+    filter: blur(60px);
+    pointer-events: none;
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+.pulse-slow {
+  animation: pulse-slow 1.2s ease-in-out forwards;
+}
+.font-gruppo {
+  font-family: "Gruppo", sans-serif;
+}
+.font-qurova {
+  font-family: "Qurova";
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-alumi {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+.font-helvetica {
+  font-family: "Helvetica Now Display Regular", sans-serif;
+}
+
+
+@layer base {
+  /* body {
+    @apply bg-white;
+    background-image: radial-gradient(
+      rgba(153, 153, 153, 0.55) 2%,
+      transparent 0
+    );
+    background-size: 35px 35px;
+    transition: background-color 0.3s ease;
+  } */
+
+body {
+    @apply bg-[#0f0f0f];
+  }
+}
+input,
+textarea {
+  outline:none;
+}
