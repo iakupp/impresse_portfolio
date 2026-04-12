@@ -8,6 +8,7 @@ const HeroSection = () => {
 
   const [isBottom, setIsBottom] = useState(false);
   const { titleLine1, titleLine2 } = HeroSectionData.title;
+
   const fullText = `${titleLine1} ${titleLine2}`;
   const words = fullText.split(" ");
 
@@ -47,12 +48,13 @@ const handleScrollClick = () => {
 
 
   return (
-    <div id="About">
+    <div id="Home">
       <div className="px-[16px] xl:px-[32px] min-h-screen w-full max-w-[400px] xl:max-w-[800px] mr-auto lg:ml-[100px] xl:ml-[200px] flex items-center">
     <h1 className="text-white font-serif font-extrabold text-[30px] lg:text-[40px] xl:text-[80px] flex flex-wrap gap-2 tracking-wide leading-[.8em]">
       {words.map((word, i) => (
         <span key={i} className="relative overflow-hidden inline-block">
           <motion.span
+            className="inline-block"
             initial={{ y: "100%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1, }}
             transition={{
@@ -76,7 +78,7 @@ const handleScrollClick = () => {
         </motion.p> */}
       </div>
       
-      <div
+      {/* <div
         className="fixed right-10 z-[40] bottom-10 cursor-pointer"
         onClick={() => handleScrollClick()}
       >
@@ -91,7 +93,7 @@ const handleScrollClick = () => {
         ) : (
           <FaArrowDownLong className="absolute text-[var(--primary-color)] right-[-12px] bottom-[3px] text-[8px]" {...({} as any)}/>
         )}
-      </div>
+      </div> */}
         <div className="border-t border-t-neutral-300 dark:border-t-neutral-800 w-auto"></div>
     </div>
   );

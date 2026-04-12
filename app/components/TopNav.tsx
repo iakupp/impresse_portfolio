@@ -67,7 +67,7 @@ const TopNav = () => {
     <>
       
       {/* Mobile Navigation */}
-      <div className="fixed flex top-0 left-0 right-0 items-center justify-between px-5 pt-6 pb-6 xl:hidden z-9999 max-w-[99dvw]">
+      <div className="fixed flex top-0 left-0 right-0 items-center justify-between px-5 pt-6 pb-6 xl:hidden z-9999 w-full">
         <Image src={logo} alt="logo" className="h-10 w-10" />
         <button onClick={toggleMenu} className="text-3xl text-white cursor-pointer">
           {isOpen ? <IoIosClose/> : <CiMenuFries />}

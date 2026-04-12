@@ -16,12 +16,21 @@
     },
     "SpeciallizedData": {
         "title":"speciallized",
-        "skills":{
+        "techstack":{
             "skill1": "Next.js",
-            "skill2": "TypeScript",
-            "skill3": "Tailwind CSS",
-            "skill4": "React",
-            "skill5": "Node.js"
+            "skill2": "React",
+            "skill3": "TypeScript",
+            "skill4": "Tailwind CSS"
+        },
+        "backend":{
+            "skill1": "Express.js",
+            "skill2": "MongoDB"
+        },
+        "services":{
+            "skill1": "Git",
+            "skill2": "Github",
+            "skill3": "Vercel",
+            "skill4": "Resend"
         }
 
     },
@@ -32,12 +41,21 @@
             "project1": {
                 "title": "Baver",
                 "description": "BAVER is your partner for complete water, gas, and heating installation and service.",
-                "demo": "https://baver-web.vercel.app",
+                "status":"Live",
+                "demo": "https://baver.sk",
                 "source": "https://github.com/iakupp/Baver-web"
             },
             "project2": {
+                "title": "Designo Web App",
+                "description": "Designo is a web app that provides users with a wide range of design services, including graphic design, web design, and branding. It offers a user-friendly interface and personalized recommendations based on user preferences.",
+                "status":"Demo",
+                "demo": "https://designo-app-dgae.vercel.app",
+                "source": "https://github.com/iakupp/designo_app"
+            },
+            "project3": {
                 "title": "E-commerce Web App",
                 "description": "E-commerce web app is a platform that provides users with a wide range of shopping options, including products from various categories. It offers a user-friendly interface and personalized recommendations based on user preferences.",
+                "status":"Demo",
                 "demo": "https://e-commerce-client-gilt-one.vercel.app",
                 "source": "https://github.com/iakupp/e-commerce-client"
             }
